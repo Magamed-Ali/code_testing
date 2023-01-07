@@ -1,6 +1,8 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
+import {splitIntoWords} from "./test/01";
+
 
 function App() {
   return (
