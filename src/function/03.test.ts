@@ -1,6 +1,6 @@
 import {StudentType} from "../object/02";
 import exp from "constants";
-import {addSkill} from "./03";
+import {addSkill, makeStudentActive} from "./03";
 
 
 let student: StudentType;
@@ -32,4 +32,13 @@ test("new teach skill should be added to student", () => {
     expect(student.technologies.length).toBe(4);
     expect(student.technologies[3].title).toBe("JS")
     expect(student.technologies[3].id).toBeDefined() // проверяет сушествует ли id
+})
+
+
+test("student should be made active", () => {
+    expect(student.isActive).toBe(false);
+
+    makeStudentActive(student)
+
+    expect(student.isActive).toBe(true);
 })
