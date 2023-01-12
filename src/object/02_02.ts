@@ -1,5 +1,5 @@
 
-type housesType = {
+export type housesType = {
     buildedAt: number
     repaired: boolean
     addres: addresType

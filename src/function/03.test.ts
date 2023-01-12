@@ -1,6 +1,6 @@
 import {StudentType} from "../object/02";
 import exp from "constants";
-import {addSkill, makeStudentActive} from "./03";
+import {addSkill, doesStudentLiveIn, makeStudentActive} from "./03";
 
 
 let student: StudentType;
@@ -42,3 +42,25 @@ test("student should be made active", () => {
 
     expect(student.isActive).toBe(true);
 })
+
+test("does student live in city?", () => {
+
+    let result1 = doesStudentLiveIn(student, "Grozny")
+    let result2 = doesStudentLiveIn(student, "Minsk")
+
+    expect(result1).toBe(false);
+    expect(result2).toBe(true);
+})
+
+
+
+
+
+
+
+
+
+
+
+
+
