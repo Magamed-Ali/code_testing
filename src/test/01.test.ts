@@ -10,7 +10,7 @@ beforeEach(() => {
     b = 2;
     c = 3;
 })
-test.skip('sum should be correct', () => {
+test('sum should be correct', () => {
     //data
     a = 100;
     b = 20;
@@ -21,11 +21,11 @@ test.skip('sum should be correct', () => {
     const result2 = sum(c, b);
 
     //expert result
-    expect(result1).toBe(3)
-    expect(result2).toBe(5)
+    expect(result1).toBe(120)
+    expect(result2).toBe(50)
 })
 
-test.skip('mult should be correct', () => {
+test('mult should be correct', () => {
     //data
     const a = 1;
     const b = 2;
@@ -40,7 +40,7 @@ test.skip('mult should be correct', () => {
     expect(result2).toBe(6)
 })
 
-test.skip("splitting into words should be correct", () => {
+test("splitting into words should be correct", () => {
     const sent1 = "Hello my friend!"
     const sent2 = "JS - programming language."
 
