@@ -2,6 +2,7 @@ import React from 'react';
 
 import './App.css';
 import {Filter} from "./Filter/Filter";
+import AppInput from "./input/input3/AppInput";
 
 
 
@@ -9,7 +10,7 @@ import {Filter} from "./Filter/Filter";
 function App() {
   return (
     <div className="App">
-      <Filter/>
+      <AppInput/>
     </div>
   );
 }
